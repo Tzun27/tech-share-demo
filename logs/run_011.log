@@ -1,0 +1,21 @@
+# run_011
+model: distilbert-base-uncased
+lr: 2e-05
+batch_size: 32
+seed: 2
+max_epochs: 9
+data: sst-3
+ep=1 loss=0.881 acc_val=0.712 time=102s
+UserWarning: lr scheduler step called before optimizer step
+ep=2 loss=0.804 acc_val=0.725 time=109s
+ep=3 loss=0.774 acc_val=0.733 time=111s
+UserWarning: lr scheduler step called before optimizer step
+ep=4 loss=0.706 acc_val=0.752 time=89s
+ep=5 loss=0.653 acc_val=0.770 time=92s
+UserWarning: lr scheduler step called before optimizer step
+ep=6 loss=0.608 acc_val=0.810 time=94s
+UserWarning: lr scheduler step called before optimizer step
+ep=7 loss=0.488 acc_val=0.814 time=99s
+ep=8 loss=0.422 acc_val=0.809 time=131s
+ep=9 loss=0.385 acc_val=0.812 time=120s
+finished

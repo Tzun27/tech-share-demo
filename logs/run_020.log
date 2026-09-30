@@ -1,0 +1,13 @@
+# run_020
+model: bert-base-uncased
+lr: 1e-05
+batch_size: 32
+seed: 2
+max_epochs: 7
+data: sst-3
+ep=1 loss=0.853 acc_val=0.670 time=89s
+ep=2 loss=0.733 acc_val=0.694 time=123s
+ep=3 loss=0.707 acc_val=0.723 time=134s
+ep=4 loss=0.672 acc_val=0.746 time=106s
+ep=5 loss=0.592 acc_val=0.786 time=98s
+epoch 6: loss is nan, aborting run

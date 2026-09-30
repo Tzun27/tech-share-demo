@@ -1,0 +1,23 @@
+# run_002
+model: bert-base-uncased
+lr: 2e-05
+batch_size: 16
+seed: 5
+max_epochs: 10
+data: sst-3
+ep=1 loss=0.905 acc_val=0.735 time=97s
+ep=2 loss=0.824 acc_val=0.756 time=131s
+UserWarning: lr scheduler step called before optimizer step
+ep=3 loss=0.733 acc_val=0.777 time=111s
+UserWarning: lr scheduler step called before optimizer step
+ep=4 loss=0.651 acc_val=0.805 time=127s
+UserWarning: lr scheduler step called before optimizer step
+ep=5 loss=0.584 acc_val=0.832 time=108s
+ep=6 loss=0.524 acc_val=0.873 time=103s
+ep=7 loss=0.477 acc_val=0.901 time=124s
+ep=8 loss=0.420 acc_val=0.917 time=116s
+ep=9 loss=0.387 acc_val=0.930 time=114s
+UserWarning: lr scheduler step called before optimizer step
+ep=10 loss=0.264 acc_val=0.930 time=114s
+UserWarning: lr scheduler step called before optimizer step
+finished

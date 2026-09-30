@@ -1,0 +1,10 @@
+[train.py v1] starting run_015
+model=roberta-base lr=2e-05 bs=16 seed=1 epochs=8
+loading dataset sst-3 ... 8544 train / 1101 val
+epoch 1/8 train_loss=0.903 val_acc=0.641
+UserWarning: lr scheduler step called before optimizer step
+epoch 2/8 train_loss=0.825 val_acc=0.663
+epoch 3/8 train_loss=0.726 val_acc=0.688
+Traceback (most recent call last):
+  File "train.py", line 212, in train_epoch
+RuntimeError: CUDA out of memory. Tried to allocate 1.17 GiB (GPU 0; 23.69 GiB total capacity)

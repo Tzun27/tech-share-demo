@@ -1,0 +1,14 @@
+# run_026
+model: deberta-v3-small
+lr: 1e-05
+batch_size: 32
+seed: 4
+max_epochs: 8
+data: sst-3
+ep=1 loss=0.892 acc_val=0.637 time=95s
+ep=2 loss=0.830 acc_val=0.669 time=137s
+ep=3 loss=0.762 acc_val=0.704 time=91s
+ep=4 loss=0.683 acc_val=0.703 time=116s
+UserWarning: lr scheduler step called before optimizer step
+ep=5 loss=0.564 acc_val=0.712 time=89s
+epoch 6: loss is nan, aborting run

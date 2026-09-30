@@ -1,0 +1,20 @@
+# run_029
+model: deberta-v3-small
+lr: 2e-05
+batch_size: 16
+seed: 3
+max_epochs: 8
+data: sst-3
+ep=1 loss=0.920 acc_val=0.644 time=99s
+UserWarning: lr scheduler step called before optimizer step
+ep=2 loss=0.803 acc_val=0.641 time=125s
+UserWarning: lr scheduler step called before optimizer step
+ep=3 loss=0.755 acc_val=0.633 time=103s
+ep=4 loss=0.646 acc_val=0.634 time=129s
+ep=5 loss=0.625 acc_val=0.624 time=140s
+UserWarning: lr scheduler step called before optimizer step
+ep=6 loss=0.564 acc_val=0.638 time=106s
+UserWarning: lr scheduler step called before optimizer step
+ep=7 loss=0.478 acc_val=0.628 time=140s
+ep=8 loss=0.417 acc_val=0.669 time=99s
+finished

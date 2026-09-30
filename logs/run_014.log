@@ -1,0 +1,17 @@
+# run_014
+model: roberta-base
+lr: 2e-05
+batch_size: 32
+seed: 2
+max_epochs: 7
+data: sst-3
+ep=1 loss=0.930 acc_val=0.643 time=135s
+ep=2 loss=0.904 acc_val=0.656 time=130s
+ep=3 loss=0.811 acc_val=0.693 time=106s
+ep=4 loss=0.786 acc_val=0.721 time=99s
+UserWarning: lr scheduler step called before optimizer step
+ep=5 loss=0.737 acc_val=0.734 time=109s
+ep=6 loss=0.690 acc_val=0.753 time=107s
+UserWarning: lr scheduler step called before optimizer step
+ep=7 loss=0.633 acc_val=0.752 time=93s
+finished

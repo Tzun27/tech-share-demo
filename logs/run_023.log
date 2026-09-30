@@ -1,0 +1,16 @@
+# run_023
+model: roberta-base
+lr: 2e-05
+batch_size: 16
+seed: 5
+max_epochs: 6
+data: sst-3
+ep=1 loss=1.033 acc_val=0.615 time=124s
+ep=2 loss=0.979 acc_val=0.640 time=96s
+ep=3 loss=0.911 acc_val=0.658 time=136s
+UserWarning: lr scheduler step called before optimizer step
+ep=4 loss=0.833 acc_val=0.650 time=125s
+UserWarning: lr scheduler step called before optimizer step
+ep=5 loss=0.727 acc_val=0.653 time=88s
+UserWarning: lr scheduler step called before optimizer step
+epoch 6: loss is nan, aborting run

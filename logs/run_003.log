@@ -1,0 +1,15 @@
+[train.py v1] starting run_003
+model=bert-base-uncased lr=3e-05 bs=32 seed=3 epochs=10
+loading dataset sst-3 ... 8544 train / 1101 val
+epoch 1/10 train_loss=0.911 val_acc=0.677
+epoch 2/10 train_loss=0.810 val_acc=0.669
+epoch 3/10 train_loss=0.715 val_acc=0.690
+epoch 4/10 train_loss=0.598 val_acc=0.719
+epoch 5/10 train_loss=0.539 val_acc=0.760
+epoch 6/10 train_loss=0.495 val_acc=0.776
+epoch 7/10 train_loss=0.431 val_acc=0.806
+epoch 8/10 train_loss=0.393 val_acc=0.823
+epoch 9/10 train_loss=0.357 val_acc=0.827
+epoch 10/10 train_loss=0.260 val_acc=0.846
+Training finished. best val_acc=0.846 (epoch 10)
+saved checkpoint to ckpt/best.pt

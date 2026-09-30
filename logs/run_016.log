@@ -1,0 +1,14 @@
+=== Training run run_016 ===
+config: {"model": "deberta-v3-small", "learning_rate": 3e-05, "batch_size": 32, "seed": 2, "num_epochs": 8}
+Loaded 8544 training and 1101 validation examples
+[Epoch 01] loss: 0.84 | val accuracy: 70.7%
+[Epoch 02] loss: 0.73 | val accuracy: 73.7%
+UserWarning: lr scheduler step called before optimizer step
+[Epoch 03] loss: 0.65 | val accuracy: 75.5%
+[Epoch 04] loss: 0.54 | val accuracy: 78.9%
+[Epoch 05] loss: 0.45 | val accuracy: 82.8%
+[Epoch 06] loss: 0.42 | val accuracy: 82.9%
+UserWarning: lr scheduler step called before optimizer step
+[Epoch 07] loss: 0.39 | val accuracy: 83.7%
+[Epoch 08] loss: 0.30 | val accuracy: 85.7%
+Done. Best validation accuracy 85.7% at epoch 8

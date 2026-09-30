@@ -1,0 +1,12 @@
+[train.py v1] starting run_027
+model=roberta-base lr=5e-05 bs=16 seed=4 epochs=6
+loading dataset sst-3 ... 8544 train / 1101 val
+epoch 1/6 train_loss=0.932 val_acc=0.683
+epoch 2/6 train_loss=0.876 val_acc=0.692
+epoch 3/6 train_loss=0.773 val_acc=0.683
+epoch 4/6 train_loss=0.721 val_acc=0.723
+epoch 5/6 train_loss=0.612 val_acc=0.745
+epoch 6/6 train_loss=0.501 val_acc=0.737
+UserWarning: lr scheduler step called before optimizer step
+Training finished. best val_acc=0.745 (epoch 5)
+saved checkpoint to ckpt/best.pt

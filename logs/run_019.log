@@ -1,0 +1,8 @@
+=== Training run run_019 ===
+config: {"model": "bert-base-uncased", "learning_rate": 3e-05, "batch_size": 32, "seed": 4, "num_epochs": 6}
+Loaded 8544 training and 1101 validation examples
+[Epoch 01] loss: 1.02 | val accuracy: 68.2%
+[Epoch 02] loss: 0.94 | val accuracy: 72.6%
+[Epoch 03] loss: 0.89 | val accuracy: 73.9%
+UserWarning: lr scheduler step called before optimizer step
+[Epoch 04] loss: nan -- stopping, loss diverged

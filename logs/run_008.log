@@ -1,0 +1,13 @@
+# run_008
+model: roberta-base
+lr: 1e-05
+batch_size: 16
+seed: 5
+max_epochs: 9
+data: sst-3
+ep=1 loss=0.916 acc_val=0.684 time=97s
+ep=2 loss=0.895 acc_val=0.679 time=134s
+ep=3 loss=0.772 acc_val=0.697 time=115s
+Traceback (most recent call last):
+  File "train.py", line 212, in train_epoch
+RuntimeError: CUDA out of memory. Tried to allocate 1.17 GiB (GPU 0; 23.69 GiB total capacity)

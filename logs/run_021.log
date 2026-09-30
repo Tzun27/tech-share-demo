@@ -1,0 +1,14 @@
+[train.py v1] starting run_021
+model=distilbert-base-uncased lr=3e-05 bs=32 seed=3 epochs=8
+loading dataset sst-3 ... 8544 train / 1101 val
+epoch 1/8 train_loss=0.989 val_acc=0.665
+epoch 2/8 train_loss=0.914 val_acc=0.658
+epoch 3/8 train_loss=0.844 val_acc=0.677
+epoch 4/8 train_loss=0.777 val_acc=0.708
+epoch 5/8 train_loss=0.738 val_acc=0.710
+epoch 6/8 train_loss=0.678 val_acc=0.716
+epoch 7/8 train_loss=0.655 val_acc=0.716
+epoch 8/8 train_loss=0.553 val_acc=0.726
+UserWarning: lr scheduler step called before optimizer step
+Training finished. best val_acc=0.726 (epoch 8)
+saved checkpoint to ckpt/best.pt

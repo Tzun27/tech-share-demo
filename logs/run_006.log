@@ -1,0 +1,17 @@
+[train.py v1] starting run_006
+model=bert-base-uncased lr=3e-05 bs=16 seed=3 epochs=10
+loading dataset sst-3 ... 8544 train / 1101 val
+epoch 1/10 train_loss=0.960 val_acc=0.652
+epoch 2/10 train_loss=0.851 val_acc=0.652
+epoch 3/10 train_loss=0.742 val_acc=0.689
+epoch 4/10 train_loss=0.697 val_acc=0.719
+epoch 5/10 train_loss=0.674 val_acc=0.727
+UserWarning: lr scheduler step called before optimizer step
+epoch 6/10 train_loss=0.626 val_acc=0.731
+epoch 7/10 train_loss=0.556 val_acc=0.774
+epoch 8/10 train_loss=0.431 val_acc=0.818
+epoch 9/10 train_loss=0.386 val_acc=0.819
+UserWarning: lr scheduler step called before optimizer step
+epoch 10/10 train_loss=0.298 val_acc=0.818
+Training finished. best val_acc=0.819 (epoch 9)
+saved checkpoint to ckpt/best.pt

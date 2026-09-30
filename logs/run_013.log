@@ -1,0 +1,10 @@
+=== Training run run_013 ===
+config: {"model": "distilbert-base-uncased", "learning_rate": 5e-05, "batch_size": 16, "seed": 3, "num_epochs": 8}
+Loaded 8544 training and 1101 validation examples
+[Epoch 01] loss: 0.83 | val accuracy: 64.0%
+[Epoch 02] loss: 0.76 | val accuracy: 64.2%
+[Epoch 03] loss: 0.66 | val accuracy: 66.7%
+[Epoch 04] loss: 0.54 | val accuracy: 70.5%
+Traceback (most recent call last):
+  File "train.py", line 212, in train_epoch
+RuntimeError: CUDA out of memory. Tried to allocate 1.17 GiB (GPU 0; 23.69 GiB total capacity)

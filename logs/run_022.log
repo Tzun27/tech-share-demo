@@ -1,0 +1,14 @@
+=== Training run run_022 ===
+config: {"model": "distilbert-base-uncased", "learning_rate": 3e-05, "batch_size": 16, "seed": 4, "num_epochs": 8}
+Loaded 8544 training and 1101 validation examples
+[Epoch 01] loss: 0.95 | val accuracy: 66.7%
+[Epoch 02] loss: 0.83 | val accuracy: 66.0%
+[Epoch 03] loss: 0.76 | val accuracy: 68.5%
+[Epoch 04] loss: 0.63 | val accuracy: 71.9%
+UserWarning: lr scheduler step called before optimizer step
+[Epoch 05] loss: 0.53 | val accuracy: 73.2%
+[Epoch 06] loss: 0.46 | val accuracy: 77.5%
+UserWarning: lr scheduler step called before optimizer step
+[Epoch 07] loss: 0.33 | val accuracy: 81.6%
+[Epoch 08] loss: 0.26 | val accuracy: 83.1%
+Done. Best validation accuracy 83.1% at epoch 8

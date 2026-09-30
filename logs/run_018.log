@@ -1,0 +1,17 @@
+[train.py v1] starting run_018
+model=deberta-v3-small lr=5e-05 bs=32 seed=1 epochs=10
+loading dataset sst-3 ... 8544 train / 1101 val
+epoch 1/10 train_loss=1.020 val_acc=0.687
+epoch 2/10 train_loss=0.951 val_acc=0.730
+epoch 3/10 train_loss=0.826 val_acc=0.730
+UserWarning: lr scheduler step called before optimizer step
+epoch 4/10 train_loss=0.791 val_acc=0.752
+epoch 5/10 train_loss=0.756 val_acc=0.794
+epoch 6/10 train_loss=0.639 val_acc=0.811
+epoch 7/10 train_loss=0.520 val_acc=0.812
+epoch 8/10 train_loss=0.500 val_acc=0.801
+epoch 9/10 train_loss=0.446 val_acc=0.815
+UserWarning: lr scheduler step called before optimizer step
+epoch 10/10 train_loss=0.392 val_acc=0.823
+Training finished. best val_acc=0.823 (epoch 10)
+saved checkpoint to ckpt/best.pt
