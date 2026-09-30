@@ -1,0 +1,1 @@
+Rewrite these rough notes as one clear paragraph for a weekly progress report to my advisor. Keep every number exactly as written. Do not add facts that are not in the notes. Output only the paragraph.

@@ -1,0 +1,13 @@
+# Model entries for the `llm` CLI. Copy into the directory printed by:  dirname "$(llm logs path)"
+- model_id: lab-gemma
+  model_name: gemma4:31b-IT-NVFP4
+  api_base: "https://litellm.netdb.csie.ncku.edu.tw/v1"
+  api_key_name: lab
+- model_id: lab-flash
+  model_name: gemini-3-flash
+  reasoning: true
+  api_base: "https://litellm.netdb.csie.ncku.edu.tw/v1"
+  api_key_name: lab
+- model_id: qwen-local
+  model_name: mlx-community/Qwen3.5-9B-MLX-4bit
+  api_base: "http://localhost:8080/v1"

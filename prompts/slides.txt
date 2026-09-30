@@ -1,0 +1,1 @@
+Turn these notes into a 4-slide outline in Marp markdown for a 5-minute group-meeting update: results, problems, the bug found, next steps. Short bullets. Keep every number exactly as written. Do not add facts that are not in the notes. Output only the markdown.

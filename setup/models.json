@@ -1,0 +1,21 @@
+{
+  "providers": {
+    "lab": {
+      "baseUrl": "https://litellm.netdb.csie.ncku.edu.tw/v1",
+      "api": "openai-completions",
+      "apiKey": "!llm keys get lab",
+      "models": [
+        { "id": "gemma4:31b-IT-NVFP4" },
+        { "id": "gemini-3-flash", "compat": { "supportsStore": false } }
+      ]
+    },
+    "mlx": {
+      "baseUrl": "http://localhost:8080/v1",
+      "api": "openai-completions",
+      "apiKey": "none",
+      "models": [
+        { "id": "mlx-community/Qwen3.5-9B-MLX-4bit", "contextWindow": 70000, "maxTokens": 8192 }
+      ]
+    }
+  }
+}

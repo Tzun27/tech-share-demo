@@ -1,0 +1,1 @@
+Write a short README section titled "Metrics" for this file: one line per function, and one sentence on how zero denominators are handled. Output only the markdown.

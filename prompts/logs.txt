@@ -1,0 +1,5 @@
+You read one training log. Output exactly one CSV line and nothing else, with four fields: model,lr,status,best_val_acc
+- model: the model name
+- lr: the learning rate
+- status: ok if training finished, oom if it ran out of memory, nan if the loss became nan
+- best_val_acc: the highest validation accuracy of any epoch, as a fraction with three decimals, for example 0.884

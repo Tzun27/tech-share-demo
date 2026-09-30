@@ -1,0 +1,1 @@
+Write a git commit message for this diff: a subject line under 72 characters, a blank line, then one or two bullet points. Output only the message.

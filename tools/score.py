@@ -24,8 +24,9 @@ got = load(sys.argv[1] if len(sys.argv) > 1 else "results.csv")
 fields = ["model", "lr", "status", "best_val_acc"]
 right = {f: 0 for f in fields}
 rows_right = 0
+truth = {run: t for run, t in truth.items() if run in got}   # score only the runs that were summarized
 for run, t in truth.items():
-    g = got.get(run, {})
+    g = got[run]
     ok = [same(f, g.get(f), t[f]) for f in fields]
     for f, o in zip(fields, ok):
         right[f] += o
