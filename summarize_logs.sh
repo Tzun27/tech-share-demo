@@ -1,6 +1,7 @@
 #!/bin/sh
 # Turn every training log into one CSV row with a language model.
 # Usage: ./summarize_logs.sh <llm model id>      e.g. ./summarize_logs.sh qwen-local
+# Extra llm options go in LLM_OPTS, e.g. LLM_OPTS='-o reasoning_effort minimal' ./summarize_logs.sh lab-flash
 MODEL=${1:?usage: ./summarize_logs.sh <llm model id>}
 PROMPT='You read one training log. Output exactly one CSV line and nothing else, with four fields: model,lr,status,best_val_acc
 - model: the model name
@@ -11,7 +12,7 @@ PROMPT='You read one training log. Output exactly one CSV line and nothing else,
 echo "run_id,model,lr,status,best_val_acc" > results.csv
 for f in logs/*.log; do
   id=$(basename "$f" .log)
-  line=$(llm -m "$MODEL" -s "$PROMPT" < "$f" | grep -v '^```' | grep . | tail -1)
+  line=$(llm -m "$MODEL" $LLM_OPTS -s "$PROMPT" < "$f" | grep -v '^```' | grep . | tail -1)
   echo "$id,$line" >> results.csv
   echo "$id,$line"
 done
