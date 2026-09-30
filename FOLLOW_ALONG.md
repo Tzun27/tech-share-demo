@@ -19,7 +19,14 @@ llm keys set lab
 ./setup/check.sh
 ```
 
-Local track only (Apple Silicon Mac): install `mlx-lm`, add the `qwen-serve` function, download the model once, and keep `qwen-serve` running in a second terminal during the session.
+Local track only (Apple Silicon Mac, 16 GB or more). Allow about 35 minutes, mostly a 5.6 GB download:
+
+```sh
+brew install mlx-lm
+cat setup/qwen.zsh >> ~/.zshrc && source ~/.zshrc
+qwen "hello"          # first run downloads the model
+qwen-serve            # keep this running in a second terminal during the session
+```
 
 ## Pick your tier
 
