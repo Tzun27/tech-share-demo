@@ -22,7 +22,7 @@ llm keys set lab
 ./setup/check.sh
 ```
 
-Local track only (Apple Silicon Mac, 16 GB or more). Allow about 35 minutes, mostly a 5.6 GB download:
+Local track only (Apple Silicon Mac, 16 GB or more). Allow about 35 minutes, mostly a 5.6 GB download. Run this from inside the cloned repo, after step 0:
 
 ```sh
 brew install mlx-lm
