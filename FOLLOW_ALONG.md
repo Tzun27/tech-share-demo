@@ -8,7 +8,8 @@ Run everything from the repo root. Each chore ends with a way to check the resul
 # 0. Get the repo
 git clone https://github.com/Tzun27/tech-share-demo.git && cd tech-share-demo
 
-# 1. Tools (macOS; on Linux: `uv tool install llm` and `npm install -g @earendil-works/pi-coding-agent`, Node 22.19+)
+# 1. Tools (macOS; on Linux: `uv tool install llm` and `npm install -g @earendil-works/pi-coding-agent`, Node 22.19+;
+#    Windows: use WSL and follow the Linux lines). Node.js is also needed for npx (ccusage, Marp): `brew install node`
 brew install llm pi-coding-agent
 
 # 2. Model entries for llm and pi (-n keeps any file you already have)
@@ -60,6 +61,8 @@ git diff | llm -m $M -s "$(cat prompts/commit.txt)"
 
 ```sh
 ./summarize_logs.sh $M 10        # first 10 logs; leave out the number for all 30
+# Gemini users: same, with reasoning turned off
+# LLM_OPTS='-o reasoning_effort minimal' ./summarize_logs.sh lab-flash 10
 python3 tools/score.py           # compare with the known answers
 ```
 

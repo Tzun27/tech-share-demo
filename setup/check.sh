@@ -1,6 +1,6 @@
 #!/bin/sh
 # Pre-session check: are the tools installed, and which model tiers answer?
-for c in llm pi python3 git; do
+for c in llm pi python3 git node npx; do
   if command -v "$c" >/dev/null 2>&1; then echo "found    $c"; else echo "MISSING  $c"; fi
 done
 try() {
@@ -14,4 +14,4 @@ try() {
 try lab-gemma
 try lab-flash
 try qwen-local
-echo "You need lab-gemma, or qwen-local with qwen-serve running. One is enough."
+echo "You need lab-gemma, or qwen-local with qwen-serve running. One is enough. node/npx are for ccusage and Marp."
