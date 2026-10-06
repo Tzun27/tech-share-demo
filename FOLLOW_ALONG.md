@@ -5,6 +5,9 @@ Run everything from the repo root. Each chore ends with a way to check the resul
 ## Before the session
 
 ```sh
+# 0. Get the repo
+git clone https://github.com/Tzun27/tech-share-demo.git && cd tech-share-demo
+
 # 1. Tools (macOS; on Linux: `uv tool install llm` and `npm install -g @earendil-works/pi-coding-agent`, Node 22.19+)
 brew install llm pi-coding-agent
 

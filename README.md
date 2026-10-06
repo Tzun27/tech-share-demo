@@ -1,5 +1,7 @@
 # sentiment-eval
 
+Demo repo for the tech share. Clone: `git clone https://github.com/Tzun27/tech-share-demo.git`
+
 A small research-code repo used as the running example in the tech share.
 
 - `evaluate.py` scores a sentiment classifier's predictions (`data/predictions.csv`).
